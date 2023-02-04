@@ -6,23 +6,53 @@
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1020px;
 }
 
-/* .car {
-    margin: 0 auto;
-    position: relative;
-    width: 400px;
-    animation: moving 10s linear -2s infinite;
-} */
+.tesla__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 40px;
+    margin-left: 55px;
+}
 
-.container {
+.tesla__body {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    height: 100vh;
 }
+
+.tesla__wheels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 415px;
+    /* animation: wheel 1.2s infinite -2s linear; */
+
+}
+
+.tesla__wheels img {
+    width: 80px;
+}
+
+.first__wheel {
+    left: 597px;
+    position: relative;
+
+}
+
+.second__wheel {
+    left: 831px;
+    position: relative;
+}
+
+
+
+
 
 
 
@@ -30,19 +60,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 160px;
-    gap: 20px;
     font-family: 'Roboto';
-    font-size: 50px;
+    font-size: 44px;
     font-weight: 700;
-    left: 590px;
-    gap: 100px;
-    padding-bottom: 20px;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .car__tool {
-    position: absolute;
+
     bottom: 70px;
     font-size: 37px;
     font-family: 'Roboto';
@@ -66,77 +93,12 @@ span {
 
 }
 
-.btn {
-    bottom: 0px;
-    position: absolute;
+
+
+
+body {
+    overflow: hidden;
 }
-
-.weel {
-    animation: wheel 0.5s infinite -2s linear;
-    background: url('https://i.stack.imgur.com/0Osjx.png') center/cover;
-    position: absolute;
-    width: 125px;
-    bottom: 278px;
-    rotate: 360deg;
-    transition: ease 1.5s;
-}
-
-.weel:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
-.weel1 {
-    left: 510px;
-}
-
-.weel2 {
-    right: 485px;
-}
-
-/*animations*/
-/* @keyframes carmove {
-    0% {
-        transform: translateY(0px);
-    }
-
-    25% {
-        transform: translateY(1px)
-    }
-
-    29% {
-        transform: translateY(2px)
-    }
-
-    33% {
-        transform: translateY(3px)
-    }
-
-    47% {
-        transform: translateY(0px)
-    }
-
-    58% {
-        transform: translateY(1px)
-    }
-
-    62% {
-        transform: translateY(2px)
-    }
-
-    66% {
-        transform: translateY(3px)
-    }
-
-    75% {
-        transform: translateY(1px)
-    }
-
-    100% {
-        transform: translateY(0px)
-    }
-} */
 
 @keyframes wheel {
     0% {
@@ -146,29 +108,4 @@ span {
     100% {
         transform: rotate(360deg)
     }
-}
-
-/* @keyframes moving {
-    0% {
-        right: -80em;
-        animation-timing-function: ease-out;
-    }
-
-    35% {
-        right: 0;
-    }
-
-    36%,
-    56% {
-        right: 0;
-        animation-timing-function: ease-in;
-    }
-
-    100% {
-        right: 120%;
-    }
-} */
-
-body {
-    overflow: hidden;
 }
